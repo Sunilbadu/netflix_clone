@@ -1,82 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
 }
-
-body {
+body{
     background-color: black;
-    display: flex;
-    justify-content: center;
 }
 
-.main {
+.main{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/30c8b9f4-3db9-4b3b-a1ee-8fa56531b712/web/NP-en-20251201-TRIFECTA-perspective_c9c8964d-98a6-41d8-8e1a-0829b83f80cc_large.jpg );
     height: 90vh;
     position: relative;
-    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/30c8b9f4-3db9-4b3b-a1ee-8fa56531b712/web/NP-en-20251201-TRIFECTA-perspective_c9c8964d-98a6-41d8-8e1a-0829b83f80cc_large.jpg );
+    background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    max-width: 1700px;
+    background-size: max(1200px , 100vw);
 }
-
-.box {
+.main .box{
+    height: 90vh;
+    width: 100%;
     opacity: 0.6;
     background-color: black;
     position: absolute;
-    inset: 0;
+    top: 0;
 }
-
-nav {
+nav{
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 80vw;
-    margin-inline: auto;
-    width: 1000px;
+    margin: auto;
     height: 62px;
-    position: relative;
+     position: relative;
     z-index: 10;
     top: 15px;
 }
-
-nav img {
+nav img{
     color: red;
     position: relative;
     z-index: 10;
     height: 100%;
 }
-
-.btn {
+.btn{
     padding: 3px 8px;
     font-weight: bold;
-    background-color: rgba(23, 23, 23, 0.2);
+    background-color: rgba(23,23,23,0.2);
     color: white;
     border-radius: 5px;
     border: 1px solid white;
 }
-
-.btn-red {
-    background-color: red;
-    color: white;
-    border-radius: 5px;
-    width: 60px;
+.btn-red{
+   background-color: red;
+color: white;
+border-radius: 5px;
+width: 60px;
 }
-
-.btn-red-sm {
-    background-color: red;
-    border-radius: 5px;
-    color: white;
+.btn-red-sm{
+background-color: red;
+border-radius: 5px;color: white;
 }
-
-.content {
+.content{
     height: calc(100% - 62px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-
+   
     position: relative;
     z-index: 10;
     flex-wrap: nowrap;
@@ -84,41 +73,33 @@ nav img {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     gap: 30px;
     text-align: center;
-
+    
 }
-
-.content> :first-child {
-
+.content> :first-child{
+    
     font-size: 50px;
 }
-
-.content> :nth-child(2) {
-
+.content> :nth-child(2){
+   
     font-size: 20px;
 }
-
-.content :nth-child(3) {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.content :nth-child(3){
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
 }
-
-.main input {
-    background-color: rgba(23, 23, 23, 0.2);
-    border: 1px solid white;
-    border-radius: 3px;
-    height: 40px;
-    width: 45%;
+.main input{
+   background-color: rgba(23,23,23,0.2);
+   border: 1px solid white;
+   border-radius: 3px;
+   height:40px;
+   width: 45%;
 
 }
-
-.separation {
+.separation{
     background-color: gray;
     height: 5px;
-    position: relative;
-    top: -5px;
 }
-
-.entry {
+.entry{
     display: flex;
     justify-content: center;
     width: 100%;
